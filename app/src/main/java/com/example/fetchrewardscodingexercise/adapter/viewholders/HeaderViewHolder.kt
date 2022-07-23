@@ -7,8 +7,8 @@ import com.example.fetchrewardscodingexercise.databinding.RowHeaderBinding
 import com.example.fetchrewardscodingexercise.model.ListItem
 
 class HeaderViewHolder(val binding: RowHeaderBinding) : RecyclerView.ViewHolder(binding.root) {
-    fun bind(skillItem: ListItem.HeaderItem) {
-        binding.textViewHeader.text = skillItem.listId.toString()
+    fun bind(item: ListItem.HeaderItem) {
+        binding.textViewHeader.text = item.listId.toString()
 
     }
     companion object {

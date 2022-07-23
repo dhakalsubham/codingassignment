@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FetchRewardsCodingExercise</string>
+    <string name="main_activity_name">Name: %s</string>
+    <string name="main_activity_id">Id: %s</string>
+    <string name="main_activity_list_id">List Id: %s</string>
+    <string name="main_activity_fetch_error">Error Fetching Data. Please try again!</string>
+    <string name="main_activity_retry">Retry</string>
+
 </resources>

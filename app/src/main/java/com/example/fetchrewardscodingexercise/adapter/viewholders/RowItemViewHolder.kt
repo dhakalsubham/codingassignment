@@ -3,13 +3,16 @@ package com.example.fetchrewardscodingexercise.adapter.viewholders
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.fetchrewardscodingexercise.R
 import com.example.fetchrewardscodingexercise.databinding.RowItemBinding
 import com.example.fetchrewardscodingexercise.model.ListItem
 
 
-class RowItemViewHolder(val binding: RowItemBinding) : RecyclerView.ViewHolder(binding.root) {
-    fun bind(skillItem: ListItem.RowItem) {
-        binding.textViewName.text=skillItem.itemModel.name
+class RowItemViewHolder(private val binding: RowItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    fun bind(item: ListItem.RowItem) {
+        binding.textViewName.text=itemView.context.getString(R.string.main_activity_name,item.itemModel.name)
+        binding.textViewId.text=itemView.context.getString(R.string.main_activity_id,item.itemModel.id.toString())
+        binding.textViewListId.text=itemView.context.getString(R.string.main_activity_list_id,item.itemModel.listId.toString())
 
     }
 

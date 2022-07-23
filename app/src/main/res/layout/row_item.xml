@@ -1,10 +1,51 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/text_view_name"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</layout>
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/design_default_color_on_primary">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="14dp"
+            android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                tools:text="Header"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_view_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Header"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_view_list_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Header"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
 
 

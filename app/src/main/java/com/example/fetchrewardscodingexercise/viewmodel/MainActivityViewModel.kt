@@ -16,7 +16,7 @@ class MainActivityViewModel : ViewModel() {
     }
 
     val itemListLiveData = MutableLiveData<MutableList<ListItem>?>()
-    private fun fetchItems() {
+    fun fetchItems() {
         viewModelScope.launch {
             MainActivityRepo.fetchListItem().let { response ->
                 when (response) {
